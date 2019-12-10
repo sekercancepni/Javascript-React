@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<script src="manga.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="styles.css">
+
+<body onload="getMangaData(counter)">
+	<div class="header">
+		<div class="headerSearch">
+			<input class="searchInput" id="searchValue" type="text" name="searchValue" placeholder="Search title..">
+			<button class="searchButton" name="button" onclick="searchTitle(document.getElementById('searchValue').value)"></button>
+		</div>
+	</div>
+
+	<div class="mangaList">
+		<div id="list">
+		</div>
+	</div>
+	<div class="changePage" id="page">
+		<a href="javascript:;" onclick="getPaginationData('prev')">Prev</a>&nbsp;&nbsp;&nbsp;
+		<a href="javascript:;" onclick="getPaginationData('next')">Next</a>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		str = {};
+	});
+	var counter = 0;
+	var i = -1;
+	var link = "https://cdn.mangaeden.com/mangasimg/"
+</script>
+</html>
+

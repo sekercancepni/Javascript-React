@@ -1,0 +1,114 @@
+.map-container{
+  width: 880px;
+  height: 600px;
+  margin: 10px 0 20px 0;
+  left: 20px;
+}
+
+
+.search-results__map-tooltip {
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  width: 140px;
+  height: 30px;
+  z-index: 200;
+  border: 1px solid #fff;
+  text-align: center;
+  background-color: #33495f;
+  border-radius: 3px;
+}
+
+.search-results__map-tooltip>div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-results__map-tooltip::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  margin-left: -7px;
+  border: 7px solid transparent;
+  border-top-color: #33495f;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.search-results__map-tooltip .name {
+  color: #33495f;
+  font-size: 12px;
+  letter-spacing: 0.18px;
+  display: none;
+}
+
+.search-results__map-tooltip .price {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.21px;
+  line-height: 30px;
+}
+
+.search-results__map-tooltip .night {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.18px;
+}
+
+.search-results__map-tooltip--active .search-results__map-tooltip{
+  width: 260px;
+  height: 91px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 1px solid #33495f;
+  background-color: #ffffff;
+  -webkit-animation: getInTooltip .3s both;
+  animation: getInTooltip .3s both;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.search-results__map-tooltip--active .search-results__map-tooltip::after {
+  border-top-color: #ffffff;
+}
+
+.search-results__map-tooltip--active .search-results__map-tooltip .name {
+  display: block;
+}
+
+.search-results__map-tooltip--active .search-results__map-tooltip .price {
+  color: #33495f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.21px;
+}
+
+.search-results__map-tooltip--active .search-results__map-tooltip .night {
+  color: #33495f;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
